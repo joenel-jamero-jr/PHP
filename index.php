@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="form-container">
-        <p style="font-weight: bold; text-align: center;">My First Ubunto Server PHP Deployment Joenel Jamero Jr.</p>
-        <h1>Registration Form</h1>
+        <h1>Registration Form</h1>        
+        <p style="text-align: center;">Ubunto Server PHP Deployment with Database - Joenel Jamero Jr.</p>
         <form action="process_registration.php" method="post">
             <label for="firstname">First Name:</label>
             <input type="text" id="firstname" name="firstname" required>
