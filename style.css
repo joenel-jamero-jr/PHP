@@ -1,0 +1,100 @@
+/* Updated style.css */
+body {
+    background: linear-gradient(135deg, #1a1a1a, #262626);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Adjust to ensure full-screen fit */
+}
+
+.form-container {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6), 0 0 20px #3399ff;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box; /* Ensure padding doesn’t exceed width */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00ccff;
+    text-shadow: 0 0 5px #0066cc, 0 0 15px #00ccff;
+    font-size: 1.8rem; /* Increased font size for better readability */
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #e6e6e6;
+    font-weight: bold;
+    font-size: 1rem; /* Better visibility */
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(50, 50, 50, 0.9);
+    color: #e0e0e0;
+    outline: none;
+    transition: background 0.3s ease-in-out, border 0.3s;
+    font-size: 1rem; /* Larger input text */
+    box-sizing: border-box; /* Consistent sizing */
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    background: rgba(80, 80, 80, 0.9);
+    border: 1px solid #3399ff; /* Border on focus for better UI feedback */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #004080, #3399ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1rem; /* Increase button text size */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #003366, #007acc);
+    transform: translateY(-2px); /* Slight lift on hover for better UI */
+}
+
+button:active {
+    transform: translateY(0); /* Return to normal on click */
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px 25px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="password"] {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
